@@ -31,11 +31,11 @@ const App = () => {
         setWinningLine([a, b, c]);
         return;
       }
-      if (!newBoard.includes(null)) {
-        setWinner("Draw");
-        setWinningLine([]);
-        return;
-      }
+    }
+    if (!newBoard.includes(null)) {
+      setWinner("Draw");
+      setWinningLine([]);
+      return;
     }
 
     setTurn(turn === "X" ? "O" : "X");
