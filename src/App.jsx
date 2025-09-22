@@ -92,9 +92,9 @@ const App = () => {
   };
 
   return (
-    <div className="lg:w-[600px] w-[450px] lg:h-[600px] h-[450px] mx-auto lg:mt-[400px] mt-[50px] relative">
-      <div className="lg:pb-[60px] pb-[40px]">
-        <p className="lg:text-[80px] text-[50px]">
+    <div className="lg:w-[600px] w-[300px] lg:h-[600px] h-[300px] mx-auto lg:mt-[400px] mt-[0px]  relative">
+      <div className="lg:pb-[60px] pb-[10px]">
+        <p className="lg:text-[80px] text-[24px]">
           {winner === "Draw"
             ? "It's a Draw!"
             : winner
@@ -106,10 +106,10 @@ const App = () => {
         <div className="flex">
           <div
             onClick={() => handleClick(0)}
-            className="lg:w-[200px] w-[150px] lg:h-[200px] h-[150px] bg-primary  lg:border-l-5 border-l-3 lg:border-t-5 border-t-3 border-white"
+            className="lg:w-[200px] w-[100px] lg:h-[200px] h-[100px] bg-primary  lg:border-l-5 border-l-3 lg:border-t-5 border-t-3 border-white"
           >
             <p
-              className={`lg:text-[150px] text-[100px] text-center lg:leading-[200px] leading-[150px] ${
+              className={`lg:text-[150px] text-[70px] text-center lg:leading-[200px] leading-[100px] ${
                 board[0] === "X" ? "text-x" : "text-o"
               }`}
             >
@@ -118,10 +118,10 @@ const App = () => {
           </div>
           <div
             onClick={() => handleClick(1)}
-            className="lg:w-[200px] w-[150px] lg:h-[200px] h-[150px] bg-seconday lg:border-l-5 border-l-3 lg:border-t-5 border-t-3 lg:border-r-5 border-r-3    border-white "
+            className="lg:w-[200px] w-[100px] lg:h-[200px] h-[100px] bg-seconday lg:border-l-5 border-l-3 lg:border-t-5 border-t-3 lg:border-r-5 border-r-3    border-white "
           >
             <p
-              className={`lg:text-[150px] text-[100px] text-center lg:leading-[200px] leading-[150px] ${
+              className={`lg:text-[150px] text-[70px] text-center lg:leading-[200px] leading-[100px] ${
                 board[1] === "X" ? "text-x" : "text-o"
               }`}
             >
@@ -130,10 +130,10 @@ const App = () => {
           </div>
           <div
             onClick={() => handleClick(2)}
-            className="lg:w-[200px] w-[150px] lg:h-[200px] h-[150px] bg-primary  lg:border-r-5 border-r-3 lg:border-t-5 border-t-3 border-white "
+            className="lg:w-[200px] w-[100px] lg:h-[200px] h-[100px] bg-primary  lg:border-r-5 border-r-3 lg:border-t-5 border-t-3 border-white "
           >
             <p
-              className={`lg:text-[150px] text-[100px] text-center lg:leading-[200px] leading-[150px] ${
+              className={`lg:text-[150px] text-[70px] text-center lg:leading-[200px] leading-[100px] ${
                 board[2] === "X" ? "text-x" : "text-o"
               }`}
             >
@@ -144,10 +144,10 @@ const App = () => {
         <div className="flex">
           <div
             onClick={() => handleClick(3)}
-            className="lg:w-[200px] w-[150px] lg:h-[200px] h-[150px] bg-seconday  lg:border-l-5 border-l-3 lg:border-t-5 border-t-3 border-white"
+            className="lg:w-[200px] w-[100px] lg:h-[200px] h-[100px] bg-seconday  lg:border-l-5 border-l-3 lg:border-t-5 border-t-3 border-white"
           >
             <p
-              className={`lg:text-[150px] text-[100px] text-center lg:leading-[200px] leading-[150px] ${
+              className={`lg:text-[150px] text-[70px] text-center lg:leading-[200px] leading-[100px] ${
                 board[3] === "X" ? "text-x" : "text-o"
               }`}
             >
@@ -156,10 +156,10 @@ const App = () => {
           </div>
           <div
             onClick={() => handleClick(4)}
-            className="lg:w-[200px] w-[150px] lg:h-[200px] h-[150px] bg-primary lg:border-l-5 border-l-3 lg:border-t-5 border-t-3 lg:border-r-5 border-r-3 border-white "
+            className="lg:w-[200px] w-[100px] lg:h-[200px] h-[100px] bg-primary lg:border-l-5 border-l-3 lg:border-t-5 border-t-3 lg:border-r-5 border-r-3 border-white "
           >
             <p
-              className={`lg:text-[150px] text-[100px] text-center lg:leading-[200px] leading-[150px] ${
+              className={`lg:text-[150px] text-[70px] text-center lg:leading-[200px] leading-[100px] ${
                 board[4] === "X" ? "text-x" : "text-o"
               }`}
             >
@@ -168,10 +168,10 @@ const App = () => {
           </div>
           <div
             onClick={() => handleClick(5)}
-            className="lg:w-[200px] w-[150px] lg:h-[200px] h-[150px] bg-seconday  lg:border-r-5 border-r-3 lg:border-t-5 border-t-3 border-white "
+            className="lg:w-[200px] w-[100px] lg:h-[200px] h-[100px] bg-seconday  lg:border-r-5 border-r-3 lg:border-t-5 border-t-3 border-white "
           >
             <p
-              className={`lg:text-[150px] text-[100px] text-center lg:leading-[200px] leading-[150px] ${
+              className={`lg:text-[150px] text-[70px] text-center lg:leading-[200px] leading-[100px] ${
                 board[5] === "X" ? "text-x" : "text-o"
               }`}
             >
@@ -182,10 +182,10 @@ const App = () => {
         <div className="flex">
           <div
             onClick={() => handleClick(6)}
-            className="lg:w-[200px] w-[150px] lg:h-[200px] h-[150px] bg-primary lg:border-b-5 border-b-3 lg:border-l-5 border-l-3 lg:border-t-5 border-t-3 border-white"
+            className="lg:w-[200px] w-[100px] lg:h-[200px] h-[100px] bg-primary lg:border-b-5 border-b-3 lg:border-l-5 border-l-3 lg:border-t-5 border-t-3 border-white"
           >
             <p
-              className={`lg:text-[150px] text-[100px] text-center lg:leading-[200px] leading-[150px] ${
+              className={`lg:text-[150px] text-[70px] text-center lg:leading-[200px] leading-[100px] ${
                 board[6] === "X" ? "text-x" : "text-o"
               }`}
             >
@@ -194,10 +194,10 @@ const App = () => {
           </div>
           <div
             onClick={() => handleClick(7)}
-            className="lg:w-[200px] w-[150px] lg:h-[200px] h-[150px] bg-seconday border-5 border-white "
+            className="lg:w-[200px] w-[100px] lg:h-[200px] h-[100px] bg-seconday border-5 border-white "
           >
             <p
-              className={`lg:text-[150px] text-[100px] text-center lg:leading-[200px] leading-[150px] ${
+              className={`lg:text-[150px] text-[70px] text-center lg:leading-[200px] leading-[100px] ${
                 board[7] === "X" ? "text-x" : "text-o"
               }`}
             >
@@ -206,10 +206,10 @@ const App = () => {
           </div>
           <div
             onClick={() => handleClick(8)}
-            className="lg:w-[200px] w-[150px] lg:h-[200px] h-[150px] bg-primary lg:border-b-5 border-b-3 lg:border-r-5 border-r-3 lg:border-t-5 border-t-3 border-white "
+            className="lg:w-[200px] w-[100px] lg:h-[200px] h-[100px] bg-primary lg:border-b-5 border-b-3 lg:border-r-5 border-r-3 lg:border-t-5 border-t-3 border-white "
           >
             <p
-              className={`lg:text-[150px] text-[100px] text-center lg:leading-[200px] leading-[150px] ${
+              className={`lg:text-[150px] text-[70px] text-center lg:leading-[200px] leading-[100px] ${
                 board[8] === "X" ? "text-x" : "text-o"
               }`}
             >
@@ -226,7 +226,7 @@ const App = () => {
       )}
       <div
         onClick={handleReset}
-        className="mt-[60px] lg:text-[24px] text-[16px] py-[6px] px-[12px] bg-black text-white cursor-pointer inline-block"
+        className="lg:mt-[60px] mt-[20px] lg:text-[24px] text-[14px] py-[6px] px-[12px] bg-black text-white cursor-pointer inline-block"
       >
         Reset
       </div>
